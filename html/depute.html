@@ -1,0 +1,49 @@
+<script type="text/template" id="depute">
+  <div>
+  	<img src={{photo_url}} class="photo_depute" alt="">
+    <h3>{{nom}}</h2>
+    <p class="attributs">
+    	{{nom_dept}}<br>
+    	{{groupe_sigle}}, {{parti_ratt_financier}}<br>
+        <a href="{{url_an}}" style="color:{{color}}" target="_blank">
+          Fiche Assemblée Nationale
+        </a> -
+        <a href="http://www.nosdeputes.fr/{{slug}}" style="color:{{color}}" target="_blank">
+          Fiche nosdeputes.fr
+        </a>
+    </p>
+    <img src="img/stamp-{{votePJL}}.png" class="stamp" alt="">
+    <p class="message_vote">
+    	{{message_vote}}
+    </p>
+
+    <hr>
+
+    <h4>Contactez votre député :</h4>
+    <div class="container-contact">
+        <div class="contact mail" style="border-left:solid 5px {{color}}">
+        	<h5>Par mail</h5>
+            <p>
+        	   <a href="mailto:{{email}}" style="color:{{color}}">{{email}}</a>
+            </p>
+        </div>
+        <div class="contact courrier" style="border-left:solid 5px {{color}}">
+        <h5>Par courrier</h5>
+        	<p>
+        		Assemblée Nationnale,
+    			rue de l’Université , 75355 Paris 07 SP
+        	</p>
+        </div>
+    </div>
+
+    <p class="twitter">
+      <a target="_blank"
+        href="https://twitter.com/search?q={{prenom}}%20{{nom_de_famille}}&mode=users"
+        style="color:{{color}}">
+        Interpellez votre député via Twitter
+      </a>
+    </p>
+
+  </div>
+</script>
+

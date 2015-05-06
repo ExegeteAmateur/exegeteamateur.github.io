@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nous n'oublierons pas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/jquery.modal.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,500,700,300italic,500italic|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
+  </head>
+  <body>
+
+    <header>
+      <h1>Nous n'oublierons pas !</h1>
+      <hr>
+      <p class="subtitle">
+      Le 5 mai, l'Assemblée a adopté le projet de loi «Renseignement».<br>
+      438 voix pour, 86 voix contre.
+      </p>
+      <a href="http://fr.wikipedia.org/wiki/Projet_de_loi_relatif_au_renseignement">Article wikipedia</a>
+      @@include('./html/search.html')
+
+      @@include('./html/footer.html')
+    </header>
+
+    <div id="carte_container">
+
+      <div id="carte">
+        <div id="legende">
+          <div id="pour">
+            <div>
+            </div>
+            <span>A voté pour</span>
+          </div>
+          <div id="contre">
+            <div>
+            </div>
+            <span>A voté contre</span>
+          </div>
+          <div id="abstention">
+            <div>
+            </div>
+            <span>S'est abstenu</span>
+          </div>
+          <div id="absent">
+            <div>
+            </div>
+            <span>Absent</span>
+          </div>
+        </div>
+
+        @@include('./html/circonscriptions.svg')
+      </div>
+    </div>
+    @@include('./html/depute.html')
+    @@include('./html/search_result.html')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>if(!window.jQuery) document.write('<scr' + 'ipt src="js/vendor/jquery-1.9.1.min.js"></scr' +'ipt>')</script>
+
+    <!-- build:js js/main.min.js -->
+    <script src="js/vendor/jquery.modal.js"></script>
+    <script src="js/vendor/jquery.render.js"></script>
+    <script src="js/vendor/jquery-svgpan.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
